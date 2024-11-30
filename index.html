@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertanyaan Jalan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Ikon matahari -->
+        <div id="sunIcon" class="icon">
+            🌞
+        </div>
+        <!-- Pertanyaan dan tombol -->
+        <div id="questionContainer">
+            <h1 class="title">Mau Jalan Besok?</h1>
+            <p class="subtitle">Pilih "Iya" untuk merencanakan hari esok!</p>
+            <div class="buttons">
+                <button id="yesButton" class="btn yes">Iya</button>
+                <button id="noButton" class="btn no">Ga</button>
+            </div>
+        </div>
+        <!-- Kalender -->
+        <div id="calendar" class="hidden">
+            <input type="date" id="datePicker">
+            <button id="sendWhatsApp" class="btn send">Kirim ke WhatsApp</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>💬 Buat Harimu Menjadi Lebih Berarti 💬</p>
+    </footer>
+    
+
+    <!-- Suara untuk tombol -->
+    <audio id="yesSound" src="yay-6326.mp3"></audio>
+    <audio id="noSound" src="Sound effect no copyright   Slip   ( Terpeleset ).mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

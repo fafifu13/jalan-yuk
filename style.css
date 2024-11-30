@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+/* Matahari berputar hanya saat memiliki kelas 'rotate' */
+.icon.rotate {
+    animation: spin 10s linear infinite;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.yes {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.yes:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.no {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.no:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+.send {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.send:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Style khusus untuk "Terima kasih cantik" */
+#footer {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+/* Style untuk teks "Terima kasih cantik" */
+#footer.thankyou p {
+    background-color: #ff69b4; /* Warna latar belakang pink untuk teks */
+    color: white;
+    font-size: 2em; /* Ukuran font lebih besar */
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    border: 2px solid #ff69b4;
+    animation: typing 2s steps(20) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Animasi mengetik */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animasi kedipan kursor */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* Tambahkan animasi untuk ikon matahari */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sunIcon.rotate {
+    animation: rotate 2s linear infinite;
+}
